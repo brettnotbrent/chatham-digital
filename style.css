@@ -1,0 +1,213 @@
+/*
+Theme Name: Chatham Digital
+Theme URI: UPDATE THIS
+Description: A simple, lightweight theme 
+
+Author: Chatham Financial / Chatham Digital
+Version: 0.1
+Tags: UPDATE
+*/
+
+@charset "utf-8";
+
+/* ==================================== Universals */
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	outline:none;
+	border:none;
+	list-style:none;
+	background:none;
+}
+
+.clear {
+	clear:both;
+}
+
+::-moz-selection {
+	background: #bee800;
+	color: #000;
+	text-shadow: none; 
+}
+::selection { 
+	background: #bee800;
+	color: #000;
+	text-shadow: none;
+}
+
+body, header, section, article, nav, footer, li, aside {
+	display:block;
+}
+
+
+/* ==================================== Typography */
+
+html { 
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-family: sans-serif;
+	color: #000;
+}
+
+h1, h2, h3, h4 {
+	font-weight:normal;
+}
+
+h1 {
+	font-size:2.0em;
+}
+
+h2 {
+	font-size:1.1em;
+	color:#999;
+}
+
+p, button {
+	font-size:1.0em;
+	line-height:1.5em;
+}
+
+a, a:visited, a:hover, a:focus, a:active {
+	text-decoration:none;
+	outline:none;
+	color:#0077d4;
+}
+
+a:visited {
+	color:#67a3d3;
+}
+
+/* ==================================== Skeleton */
+
+html {
+	width:100%;
+	height:100%;
+	background-color:#ccc;
+}
+
+body {
+	width:980px;
+	min-height:100%;
+	margin:0 auto 0 auto;
+	background-color:#fff;
+	box-shadow:0 0 100px 2px rgba(0, 0, 0, 0.2);
+}
+
+aside.sidebar {
+	width:300px;
+	min-height:100%;
+	position:fixed;
+}
+
+section.content {
+	width:600px;
+	min-height:100%;
+	margin:0 0 0 300px;
+}
+
+aside.sidebar, section.content {
+	padding:25px;
+	float:left;
+}
+
+/* ==================================== Nav */
+
+.sidebar .nav-item {
+	width:100%;
+	height:auto;
+	margin:0 0 15px 0;
+    /* sidebar links as buttons
+    border-radius:10px;
+    background-image:
+    -webkit-gradient(
+    	linear, 0% 0%, 0% 100%, 
+    	from(rgba(62, 155, 247, 1.0)), 
+    	to(rgba(0, 119, 212, 1.0))
+    	);
+    background-image: 
+    -webkit-linear-gradient(
+    	bottom, 
+    	rgba(0, 119, 212, 1.0) 30%, 
+    	rgba(62, 155, 247, 1.0) 70%
+    	); 
+    background-image: 
+    -moz-linear-gradient(
+    	bottom, 
+    	rgba(0, 119, 212, 1.0) 30%, 
+    	rgba(62, 155, 247, 1.0) 70%
+    	);
+    background-image: 
+    -ms-linear-gradient(
+    	bottom, 
+    	rgba(0, 119, 212, 1.0) 30%, 
+    	rgba(62, 155, 247, 1.0) 70%
+    	);
+    background-image: 
+    -o-linear-gradient(
+    	bottom, 
+    	rgba(0, 119, 212, 1.0) 30%, 
+    	rgba(62, 155, 247, 1.0) 70%
+    	);*/
+	-webkit-transition:all 0.7s ease;
+    -moz-transition:all 0.7s ease;
+}
+
+.sidebar .nav-item a {
+	color:#555;
+	display:block;
+	min-width:100%;
+	min-height:100%;
+	padding:10px;
+	text-align:left;
+}
+
+.sidebar .nav-item:hover, .selected {
+	background-color:#acd5f5;
+}
+
+
+
+/* ==================================== Posts */
+li.post {
+	border-top:#ccc 1px solid;
+	padding:15px 0 15px 0;
+}
+li.post:nth-child(2){
+	border-top:none;
+	padding:0 0 15px 0;
+}
+
+.content p {
+	margin:15px 0 0 0;
+}
+
+.content h1, .content h2, .content p {
+	max-width:800px;
+}
+
+.content h2 ul, .content h2 ul li  {
+	display:inline;
+	width:auto;
+}
+
+/* Responsive media queries */
+@media only screen and (min-width: 1330px) {
+
+}
+
+/* ==================================== Small format (320x480) landscape only */
+
+@media only screen and (max-width: 480px) {}
+
+/* ==================================== Retina displays */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* ==================================== Printing adjustments */
+
+@media print {}
