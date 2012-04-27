@@ -153,8 +153,11 @@ aside.sidebar, section.content {
     	rgba(0, 119, 212, 1.0) 30%, 
     	rgba(62, 155, 247, 1.0) 70%
     	);*/
-	-webkit-transition:all 0.7s ease;
-    -moz-transition:all 0.7s ease;
+	-webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    background-image:url('imgs/btnbg.png');
+    background-position:592% center;
+    background-repeat:no-repeat;
 }
 
 .sidebar .nav-item a {
@@ -167,7 +170,9 @@ aside.sidebar, section.content {
 }
 
 .sidebar .nav-item:hover, .selected {
-	background-color:#acd5f5;
+	background-image:url('imgs/btnbg.png');
+    background-position:100% center;
+    background-repeat:no-repeat;
 }
 
 
